@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_production__brands
+    description: "This model contains information about brands"
+    columns:
+      - name: brand_id
+        description: "Primary key, unique identifier for each customer"
+        tests:
+            - unique
+            - not_null
+  - name: stg_production__categories
+    description: "This model contains information about categories of bikes"
+    columns:
+      - name: category_id
+        description: "Primary key, unique identifier for each category"
+        tests:
+            - unique
+            - not_null
+  - name: stg_production__products
+    description: "This model contains information about each products"
+    columns:
+      - name: product_id
+        description: "Primary key, unique identifier for each product"
+        tests:
+            - unique
+            - not_null
+  - name: stg_production__stocks
+    description: "This model contains information about stocks"
+  
